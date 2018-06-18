@@ -117,7 +117,7 @@ export const FEWDProjects = [
     title: 'React Flickr Gallery',
     description: 'Create an image gallery using React and the Flickr API. You will build the gallery components, add to the supplied CSS and set up routing.',
     img_src: fewdImg11,
-    skills: ['HTML', 'CSS', 'Javascript', 'React', 'Git'],
+    skills: ['HTML', 'CSS', 'Javascript', 'React', 'Git', 'GitHub Pages'],
     grade: 'To Be Submitted',
     link: 'https://krizferre.github.io/fewd-techdegree-project-11/',
     github: 'https://github.com/krizferre/fewd-techdegree-project-11'
@@ -127,10 +127,10 @@ export const FEWDProjects = [
     title: 'Online Portfolio',
     description: 'The final capstone project for the Front End Web Development Techdegree Program. Show off your skill and expertise in the tools and techniques you\'ve learned in the Techdegree by building a professional portfolio to showcase your work.',
     img_src: fewdImg12,
-    skills: ['HTML', 'CSS', 'SASS', 'Responsive Design', 'Javascript', 'JQuery', 'React', 'Git', 'GitHub Pages'],
+    skills: ['HTML', 'CSS', 'SASS', 'Responsive Design', 'Javascript', 'React', 'Git', 'Netlify'],
     grade: 'To Be Submitted',
-    link: 'https://krizferre.github.io/',
-    github: 'https://github.com/krizferre/krizferre.github.io/tree/new-master'
+    link: 'https://krizferre.netlify.com/',
+    github: 'https://github.com/krizferre/fewd-techdegree-project-12'
   },
 ];
 
