@@ -1,0 +1,167 @@
+// ==========================================================================
+// Modal Styles
+// ==========================================================================
+
+.Modal {
+  padding: 1em;
+  border: 1px solid rgb(204, 204, 204);
+  background: whitesmoke;
+  outline: none;
+  border-radius: 4px;
+  overflow: auto;
+
+  @include mq(tablet) {
+    padding: 2em;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    right: 80px;
+    bottom: 150px;
+  }
+
+  @include mq(desktop) {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    right: 200px;
+    bottom: 150px;
+  }
+}
+
+.ReactModal__Content {
+  font-family: $font-family--primary;
+
+  button {
+    padding: 0;
+  }
+
+  header {
+    border-bottom: 1px solid black;
+    margin-bottom: .5em;
+
+    .title {
+      margin: 0;
+      font-size: 1.2em;
+      @include mq(tablet) {
+        font-size: 1.4em;
+      }
+    }
+
+    @include mq(tablet) {
+      @include flex() {
+        align-items: center;
+
+        .title {
+          margin-right: auto;
+        }
+      }  
+    }
+  }
+
+  .desc {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: .9em;
+  }
+
+  .grade {
+    font-size: .8em;
+    border: 1px solid black;
+    padding-left: .2em;
+
+    @include mq(tablet) {
+      width: 300px;
+    }
+
+    .value {
+      background: gray;
+      padding: .2em .4em;
+      color: mediumspringgreen; 
+      margin-left: .3em;
+      width: 60%;
+      text-align: center;
+
+      @include mq(tablet) {
+        width: 50%;
+      }
+    }
+
+    @include flex() {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .skills {
+    margin-bottom: 1em;
+    font-size: .7em;
+    color: white;
+
+    li {
+      background: gray;
+      border-radius: 1em;
+      padding: .3em .5em;
+      margin-right: .5em;
+      margin-bottom: .5em;
+    }
+
+    @include flex() {
+      flex-wrap: wrap;
+    }
+  }
+
+  .links {
+
+    @include flex();
+
+    a {
+      margin-right: 1em;
+      @include flex() {
+        align-items: center;
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: .2em;
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, .7) !important;
+}
+
+// ==========================================================================
+// Modal Effects
+// ==========================================================================
+
+.ReactModal {
+
+  &__Content {
+    transition: transform 500ms;
+    transform: scale(0);
+
+    &--after-open {
+      transform: scale(1);
+    }
+
+    &--before-close {
+      transform: scale(0);
+    }
+  }
+
+  &__Overlay {
+    transition: opacity 500ms;
+    opacity: 0;
+
+    &--after-open {
+      opacity: 1;
+    }
+
+    &--before-close {
+      opacity: 0;
+    }
+  }
+}

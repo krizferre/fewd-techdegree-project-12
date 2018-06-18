@@ -1,0 +1,72 @@
+// ==========================================================================
+// Navigation Styles
+// ==========================================================================
+
+.main-nav {
+
+  li {
+
+    @include mq(tablet) {
+      margin: 0 .5em;
+    }
+
+    a {
+      // border: 2px solid rgba(255, 255, 255, 0);
+      color: $color-main-nav-text;
+      padding: .5em;
+      display: block;
+
+      @include mq(tablet) {
+        width: 200px;
+        padding: .5em 1em;
+      }
+
+      @include mq(desktop) {
+        width: 190px;
+        padding: .3em .3em;
+      }
+    }
+  }
+ 
+
+  @include mq(tablet) {
+    ul {
+      @include flex() {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.main-nav-link-active {
+  color: $color-main-nav-text-active !important;
+  background: $color-main-nav-active-bg;
+  // border: 2px solid $color-main-nav-active-bg !important;
+}
+
+.projects {
+  nav {
+
+    a { 
+      border-radius: 1em;
+      margin-right: .5em;
+      padding: .2em .4em;
+      display: inline-block;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 3em;
+
+      ul {
+        @include flex() {
+          justify-content: center;
+        }
+      }
+    }    
+  }
+}
+
+.proj-nav-link-active {
+  color: white;
+  background: gray;
+}

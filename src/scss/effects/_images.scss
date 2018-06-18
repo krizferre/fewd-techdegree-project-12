@@ -1,0 +1,109 @@
+// ==========================================================================
+// Image Effects
+// ==========================================================================
+
+.contact {
+  .links {
+    g,
+    path {
+      fill: gray;
+    }
+
+    .mail {
+      &:hover {
+        path {
+          fill: goldenrod;
+        }
+      }
+    }
+
+    .linkedin {
+      &:hover {
+        path {
+          fill: #0077B5;
+        }
+      }
+    }
+
+    .github {
+      &:hover {
+        path {
+          fill: lightgray;
+        }
+      }
+    }
+
+    .twitter {
+      &:hover {
+        path {
+          fill: #1DA1F2;
+        }
+      }
+    }
+
+    .treehouse {
+      &:hover {
+        path {
+          fill: #6fbc6d;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes slide-from-top {
+  0% {
+    transform: translateY(-1000px);
+  }
+}
+
+@keyframes slide-appear-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes slide-appear-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);  
+  }
+}
+
+@keyframes rotate-slide-appear-from-right {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) translate3d(-362px, -300px, 0);     
+  }
+}
+
+/* --------------------------
+  SVG Animations
+--------------------------- */
+
+.logo {
+  .line-center {
+    animation: slide-from-top 2s;
+  }
+
+  .f,
+  .ferre,
+  .line-right {
+    animation: slide-appear-from-left 2s;
+  }
+
+  .k {
+    animation: rotate-slide-appear-from-right 2s;
+    transform: rotate(180deg) translate3d(-262px, -300px, 0); 
+  }
+
+  .kriz,
+  .line-left {
+    animation: slide-appear-from-right 2s;
+  }
+}

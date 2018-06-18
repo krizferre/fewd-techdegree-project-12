@@ -1,0 +1,90 @@
+// ==========================================================================
+// Typography Styles
+// ==========================================================================
+
+footer {
+  font-size: .9em;
+  color: grey;
+}
+
+.app-container {
+  font-family: $font-family--primary;
+  color: $color-primary;
+}
+
+.main-nav {
+  li {
+    font-size: 1.2em;
+    font-weight: 500;
+
+    @include mq(desktop) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.projects {
+  .title {
+    font-weight: 600;
+  }
+  nav {
+    font-size: .9em;
+  }
+}
+
+.project {
+  .overlay {
+    .title {
+      font-size: 1.1em;
+
+      @include mq(tablet) {
+        font-size: 1.4em;
+      }
+
+      @include mq(desktop) {
+        font-size: 1.2em;
+      }
+
+    }
+
+    button {
+      text-transform: uppercase;
+      font-size: .9em;
+    }
+  }
+}
+
+.main-container {
+  h4,
+  p {
+    color: $color-paragraph;
+
+    @include mq(tablet) {
+      font-size: 1.2em;
+    }
+  }
+  .inspire {
+    color: fuchsia;
+  }
+  .treehouse {
+    color: mediumaquamarine;
+    font-weight: bold;
+  }
+  .portfolio {
+    color: tomato;
+    font-weight: bold;
+  }
+  .contact-link {
+    color: cornflowerblue;
+    font-weight: bold;
+  }
+}
+
+.contact {
+  .links {
+    label {
+      font-size: .9em;
+      color: gray;
+    }
+  }
+}

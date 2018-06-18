@@ -1,0 +1,139 @@
+// ==========================================================================
+// Container Styles
+// ==========================================================================
+
+body:before {
+  content: "";
+  background-image: url('../images/main-bg-inverted.png');
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+}
+
+.app-container {
+  background-color: $color-main-bg;
+  min-height: 100vh;
+  text-align: center;
+
+  @include flex($direction:column);
+  .main-container {
+    flex-grow: 1;
+  }
+  footer {
+    border-top: 1px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @include mq(tablet) {
+    margin: 0 30px;
+  }
+
+  @include mq(desktop) {
+    margin: 0 60px;
+  }
+
+}
+
+.main-header {
+  padding: 0 20px 20px;
+
+  @include mq(desktop) {
+    padding-bottom: 0;
+    @include flex() {
+      align-items: center;
+    }
+  }
+}
+
+.main-container {
+  background-color: $color-content-bg;
+  padding: 0 20px 20px 20px;
+}
+
+.project {
+  position: relative;
+  margin: 1em;
+  
+  .overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex; /* For centering text inside .photo-overlay */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0, .5);
+  }
+
+  @include mq(tablet) {
+    width: 45%;
+  }
+
+  @include mq(desktop) {
+    width: 29.5%;
+  }
+}
+
+@include mq(tablet) {
+  .projects {
+    .container {
+      @include flex() {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+.contact {
+  .links {
+    margin: 2em;
+
+    @include flex() {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 50px;
+      margin: 0 1em;
+
+      @include flex($direction:column) {
+        align-items: center;
+      }
+    }
+  }
+
+  @include mq(tablet) {
+    p {
+      padding: 0 2em;
+    }
+  }
+}
+
+.home {
+  @include mq(desktop) {
+    .content {
+      padding: 2em;
+
+      img {
+        margin-right: 3em;
+      }
+
+      @include flex() {
+        align-items: center;
+      }
+    }
+  }
+}
