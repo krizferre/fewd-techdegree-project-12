@@ -464,7 +464,7 @@ footer {
     .ReactModal__Content header .title {
       margin: 0;
       font-size: 1.2em; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .ReactModal__Content header .title {
           font-size: 1.4em; } }
     @media (min-width: 768px) {
@@ -479,26 +479,17 @@ footer {
     margin-bottom: .5em;
     font-size: .9em; }
   .ReactModal__Content .grade {
-    font-size: .8em;
-    border: 1px solid black;
-    padding-left: .2em;
+    font-size: .7em;
+    border: 1px solid gray;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
-    @media (min-width: 768px) {
-      .ReactModal__Content .grade {
-        width: 300px; } }
+    align-items: center; }
+    .ReactModal__Content .grade .label {
+      padding: 0 .5em; }
     .ReactModal__Content .grade .value {
       background: gray;
-      padding: .2em .4em;
-      color: mediumspringgreen;
-      margin-left: .3em;
-      width: 60%;
-      text-align: center; }
-      @media (min-width: 768px) {
-        .ReactModal__Content .grade .value {
-          width: 50%; } }
+      padding: .2em .5em;
+      color: mediumspringgreen; }
   .ReactModal__Content .skills {
     margin-bottom: 1em;
     font-size: .7em;

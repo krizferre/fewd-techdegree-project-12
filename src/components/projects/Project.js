@@ -51,7 +51,7 @@ class Project extends Component {
             <header>
               <h2 className="title">{this.props.title}</h2>
               <p className="grade">
-                <span><strong>Treehouse Grade</strong></span>
+                <span className="label">Treehouse Grade</span>
                 <span className="value" style={{color:gradeColor}}>{this.props.grade}</span>
               </p>
             </header>
