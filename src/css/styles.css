@@ -554,7 +554,8 @@ footer {
 
 .contact .links g,
 .contact .links path {
-  fill: gray; }
+  fill: gray;
+  transition: fill 1s; }
 .contact .links .mail:hover path {
   fill: goldenrod; }
 .contact .links .linkedin:hover path {
@@ -601,9 +602,10 @@ footer {
   animation: slide-appear-from-right 2s; }
 
 .contact .links label {
-  visibility: hidden; }
+  opacity: 0;
+  transition: opacity 1s; }
 
 .contact .links li:hover label {
-  visibility: visible; }
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
