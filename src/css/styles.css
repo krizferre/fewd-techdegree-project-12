@@ -494,8 +494,7 @@ footer {
   .ReactModal__Content .grade {
     font-size: .7em;
     border: 1px solid gray;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     align-items: center; }
     .ReactModal__Content .grade .label {
       padding: 0 .5em; }
