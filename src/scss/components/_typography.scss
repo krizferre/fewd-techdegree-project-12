@@ -35,21 +35,23 @@ footer {
 .project {
   .overlay {
     .title {
-      font-size: 1.1em;
+      font-size: .9em;
+      letter-spacing: .1em;
 
       @include mq(tablet) {
-        font-size: 1.4em;
+        font-size: 1em;
       }
 
       @include mq(desktop) {
-        font-size: 1.2em;
+        font-size: 1em;
       }
 
     }
 
     button {
       text-transform: uppercase;
-      font-size: .9em;
+      letter-spacing: .3em;
+      font-size: .7em;
     }
   }
 }

@@ -39,7 +39,7 @@ class Project extends Component {
         <img src={this.props.img} alt="Project" />
         <div className="overlay">
           <h3 className="title">{this.props.title}</h3>
-          <button type="button" onClick={this.handleOpenModal}>Details</button>
+          <button type="button" onClick={this.handleOpenModal}><span>Details</span></button>
           <ReactModal 
             isOpen={this.state.showModal}
             contentLabel="Project Details Modal"

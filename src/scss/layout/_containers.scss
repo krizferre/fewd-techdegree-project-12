@@ -59,14 +59,25 @@ body:before {
   margin: 1em;
   
   .overlay {
+
+    .title {
+      margin: 0 0 .3em 0;
+    }
+
     color: #fff;
     position: absolute;
-    top: 0;
+    top: 85px;
     right: 0;
     bottom: 0; 
     left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @include mq(tablet) {
+      top: 110px;
+    }
+
+    @include mq(desktop) {
+      top: 0;
+    }
 
     display: flex; /* For centering text inside .photo-overlay */
     flex-direction: column;
