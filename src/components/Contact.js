@@ -4,9 +4,9 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <header>
+      {/* <header>
         <h1 className="title">C O N T A C T</h1>
-      </header>
+      </header> */}
       <p>I am available for full-time employment. Please do reach out using the links below. Thanks!</p>
       <ul className="links">
         <li className="mail">

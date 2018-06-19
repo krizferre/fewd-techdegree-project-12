@@ -7,12 +7,15 @@
 .contact {
   header {
     .title {
-      border-top: 5px solid $color-header;
-      border-bottom: 5px solid $color-header;
-      border-radius: 5px;
+      // border-top: 5px solid $color-header;
+      // border-bottom: 5px solid $color-header;
+      // border-radius: 5px;
       padding: .1em;
       margin: .5em 0;
-      color: $color-header;
+      // color: $color-header;
+      background-color: $color-header;
+      transform: translateY(-38px);
+      // display: inline-block;
     }
   }
 }

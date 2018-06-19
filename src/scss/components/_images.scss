@@ -6,6 +6,11 @@
   .logo {
     rect {
       fill: $color-main-bg-logo;
+      @include mq(desktop) {
+        fill: black;
+        stroke: $color-main-nav-text;
+        stroke-width: 2px;
+      }
     }
     text {
       fill: $color-logo;
@@ -15,8 +20,9 @@
     }
 
     @include mq(desktop) {
-      margin-left: 50px;
-      margin-right: auto;
+      margin-left: 30px;
+      margin-top: 30px;
+      transform: translateY(0px);
     }
   }
 }
@@ -33,6 +39,5 @@
     border-radius: 50%;
     border-style: double;
     margin: .5em;
-    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }

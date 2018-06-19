@@ -4,7 +4,7 @@
 
 footer {
   font-size: .9em;
-  color: grey;
+  color: rgb(194, 193, 193);
 }
 
 .app-container {
@@ -14,11 +14,23 @@ footer {
 
 .main-nav {
   li {
-    font-size: 1.2em;
+    letter-spacing: .1em;
+    span {
+      margin-right: -.1em;
+    }
+    font-size: 1.1em;
     font-weight: 500;
 
+    @include mq(tablet) {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: .3em;
+      span {
+        margin-right: -.3em;
+      }
+    }
     @include mq(desktop) {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 }
@@ -52,6 +64,9 @@ footer {
       text-transform: uppercase;
       letter-spacing: .3em;
       font-size: .7em;
+      @include mq(tablet) {
+        font-size: .85em;
+      }
     }
   }
 }
@@ -65,20 +80,22 @@ footer {
       font-size: 1.2em;
     }
   }
-  .inspire {
-    color: fuchsia;
-  }
-  .treehouse {
-    color: mediumaquamarine;
-    font-weight: bold;
-  }
-  .portfolio {
-    color: tomato;
-    font-weight: bold;
-  }
-  .contact-link {
-    color: cornflowerblue;
-    font-weight: bold;
+  .home {
+    .inspire {
+      color: fuchsia;
+    }
+    .treehouse {
+      color: mediumaquamarine;
+      font-weight: bold;
+    }
+    .portfolio {
+      color: tomato;
+      font-weight: bold;
+    }
+    .contact-link {
+      color: cornflowerblue;
+      font-weight: bold;
+    }
   }
 }
 

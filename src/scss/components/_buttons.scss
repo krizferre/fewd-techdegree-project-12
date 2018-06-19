@@ -6,11 +6,15 @@
   .overlay {
     button {
       background-color: $button-details-color;
-      border: 1px solid white;
+      color: whitesmoke;
+      border: 1px solid whitesmoke;
       border-radius: .2em;
       padding: .2em;
 
       @include mq(tablet) {
+        padding: .3em .4em;
+      }
+      @include mq(desktop) {
         padding: .3em .4em;
       }
 

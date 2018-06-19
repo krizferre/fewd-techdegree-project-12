@@ -9,11 +9,15 @@ $font-family--primary    : 'Raleway', sans-serif;
 
 // Colors
 
-$color-logo : #d1d1d1;
+// $color-logo : #d1d1d1;
+$color-logo : turquoise;
 
-$color-main-nav-active-bg   : rgba(177, 174, 81, .8);
+// $color-main-nav-active-bg   : rgba(177, 174, 81, .8);
+// $color-main-nav-active-bg   : rgba(220, 216, 101, .95);
+$color-main-nav-active-bg   : rgb(220, 216, 101);
 $color-main-nav-text        : #DCD865;
-$color-main-nav-text-active : #F3F3F3;
+// $color-main-nav-text-active : #F3F3F3;
+$color-main-nav-text-active : black;
 
 $color-primary             : black;
 $button-details-color      : cadetblue;
@@ -23,7 +27,9 @@ $color-main-bg-logo   : rgba(0, 0, 0, 0);
 $color-main-bg        : rgba(0, 0, 0, 0.7);
 $color-content-bg     : rgba(0, 0, 0, 0.5);
 
-$color-header         : #44C8B6;
+$color-content-border : #DCD865;
+
+$color-header         : rgba(68, 200, 182, 1);
 
 $color-paragraph      : lightgray;
 

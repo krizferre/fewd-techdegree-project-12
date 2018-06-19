@@ -3,6 +3,15 @@
 // ==========================================================================
 
 .main-nav {
+  transform: translateY(0px);
+  @include mq(tablet) {
+    transform: translateY(5px);
+  }
+  @include mq(desktop) {
+    transform: translateY(20px);
+    margin-left: auto;
+    margin-right: 20px;
+  }
 
   li {
 
@@ -11,10 +20,17 @@
     }
 
     a {
-      // border: 2px solid rgba(255, 255, 255, 0);
+      border: 1px solid $color-main-nav-text;
+      background-color: black;
       color: $color-main-nav-text;
-      padding: .5em;
+      padding: .3em .5em;
       display: block;
+
+      transition: color .5s, background-color .5s;
+      &:hover {
+        color: $color-main-nav-text-active;
+        background: $color-main-nav-active-bg;      
+      }
 
       @include mq(tablet) {
         width: 200px;
@@ -23,25 +39,22 @@
 
       @include mq(desktop) {
         width: 190px;
-        padding: .3em .3em;
+        padding: .4em .4em;
       }
     }
   }
  
 
-  @include mq(tablet) {
-    ul {
-      @include flex() {
-        justify-content: center;
-      }
+  ul {
+    @include flex() {
+      justify-content: space-evenly;
     }
   }
 }
 
 .main-nav-link-active {
   color: $color-main-nav-text-active !important;
-  background: $color-main-nav-active-bg;
-  // border: 2px solid $color-main-nav-active-bg !important;
+  background-color: $color-main-nav-active-bg !important;
 }
 
 .projects {

@@ -6,9 +6,9 @@ const Home = () => {
 
   return (
     <div className="home">
-      <header>
+      {/* <header>
         <h1 className="title">H O M E</h1>
-      </header>
+      </header> */}
 
       <div className="content">
         <img src={photoKrizFerre} alt="Kriz Ferre" />

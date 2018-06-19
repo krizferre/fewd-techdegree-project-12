@@ -24,9 +24,9 @@ const Header = () => {
       </svg>
       <nav className="main-nav">
         <ul>
-          <li><NavLink exact to={process.env.PUBLIC_URL + '/'} activeClassName="main-nav-link-active">H O M E</NavLink></li>
-          <li><NavLink to={process.env.PUBLIC_URL + '/projects'} activeClassName="main-nav-link-active">P R O J E C T S</NavLink></li>
-          <li><NavLink to={process.env.PUBLIC_URL + '/contact'} activeClassName="main-nav-link-active">C O N T A C T</NavLink></li>              
+          <li><NavLink exact to={process.env.PUBLIC_URL + '/'} activeClassName="main-nav-link-active"><span>Home</span></NavLink></li>
+          <li><NavLink to={process.env.PUBLIC_URL + '/projects'} activeClassName="main-nav-link-active"><span>Projects</span></NavLink></li>
+          <li><NavLink to={process.env.PUBLIC_URL + '/contact'} activeClassName="main-nav-link-active"><span>Contact</span></NavLink></li>              
         </ul>
       </nav>
     </header>

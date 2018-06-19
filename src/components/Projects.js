@@ -8,15 +8,15 @@ import { FEWDProjects } from '../data/projects';
 
 const Projects = ({match}) => (
   <div className="projects">
-    <header>
-      <h1 className="title">P R O J E C T S</h1>
+    {/* <header>
+      <h1 className="title">P R O J E C T S</h1> */}
       {/* <nav>
         <ul>
           <li><NavLink to={`${match.url}/fewd`} activeClassName="proj-nav-link-active">Front End Web Development</NavLink></li>
           <li><NavLink to={`${match.url}/fsjs`} activeClassName="proj-nav-link-active">Full Stack JavaScript</NavLink></li>
         </ul>
       </nav> */}
-    </header>
+    {/* </header> */}
 
     <Route exact path={`${match.path}`} render={ () => <Redirect to={`${match.path}/fewd`} /> } />
     <Route path={`${match.path}/fewd`} render={ () => <ProjectContainer data={FEWDProjects} /> } />
