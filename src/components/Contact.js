@@ -84,7 +84,7 @@ const Contact = () => {
           <label>/twitter</label>
         </li>
         <li className="treehouse">
-          <a href="https://teamtreehouse.com/krizferrefajardo" target="_blank" rel="noopener noreferrer"> 
+          <a href="https://teamtreehouse.com/krizferre" target="_blank" rel="noopener noreferrer"> 
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
               width="50" height="50" viewBox="43 45 170 170"
               preserveAspectRatio="xMidYMid meet">
