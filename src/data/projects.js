@@ -10,13 +10,14 @@ import fewdImg09 from '../images/fewd-proj-img-09.png';
 import fewdImg10 from '../images/fewd-proj-img-10.png';
 import fewdImg11 from '../images/fewd-proj-img-11.png';
 import fewdImg12 from '../images/fewd-proj-img-12.png';
+import fewdImg13 from '../images/fewd-proj-img-13.png';
 
 export const FEWDProjects = [
   {
     id: 'fewd-proj-13',
     title: 'Vue Inventory',
     description: 'This is a simple CRUD inventory system app made with HTML, CSS, Bootstrap 4 and VueJS.',
-    img_src: fewdImg12,
+    img_src: fewdImg13,
     skills: ['HTML', 'CSS', 'Responsive Design', 'Bootstrap 4', 'VueJS', 'Git', 'GitHub Pages'],
     grade: 'N/A',
     link: 'https://krizferre.github.io/vue-inventory/',
