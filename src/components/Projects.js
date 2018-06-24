@@ -7,7 +7,8 @@ import ProjectContainer from './projects/ProjectContainer';
 import { FEWDProjects } from '../data/projects';
 
 const Projects = ({match}) => {
-  const fewdProjects = FEWDProjects.reverse();
+  // const fewdProjects = FEWDProjects.reverse();
+  const fewdProjects = FEWDProjects;
 
   return (
     <div className="projects">
