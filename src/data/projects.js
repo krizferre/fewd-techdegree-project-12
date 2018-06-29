@@ -59,7 +59,7 @@ export const FEWDProjects = [
     description: 'Build an interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. The project involves creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.',
     img_src: fewdImg09,
     skills: ['HTML', 'CSS', 'Responsive Design', 'Javascript', 'JQuery', 'SVG Graphics', 'Third-party API'],
-    grade: 'To Be Submitted',
+    grade: 'Exceeds Expectations',
     link: 'https://krizferre.github.io/fewd-techdegree-project-9/',
     github: 'https://github.com/krizferre/fewd-techdegree-project-9'
   },
